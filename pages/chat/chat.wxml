@@ -1,0 +1,46 @@
+<!--pages/index/to_news/to_news.wxml-->
+<view class='top-content'>
+  <image src='images/back.png' class='back-icon' bindtap='back'></image>
+  <view class="weui-cells__title" style=' display: flex;flex-direction: row;justify-content: center;margin-left:210rpx'>匿名聊天X</view>
+</view>
+<view class='news'>
+
+  <view class="historycon">
+    <scroll-view scroll-y="true"  class="history">
+      <block wx:for="{{newsList}}" wx:key>
+        <!--此处为other  -->
+        <view wx:if="{{item.type==0}}">
+          <view>
+            <text class='chat-time'>{{item.date}}</text>
+          </view>
+          <view class='other-record'>
+            <image class='other-head-img' src='images/headimg.png'></image>
+            <view class='other-record-content-triangle'></view>
+            <view class='other-record-content'>
+            {{item.message}}</view>
+          </view>
+        </view>
+        <!--此处为结尾  -->
+        <!--此处为own  -->
+        <view wx:else>
+          <view>
+            <text class='chat-time'>{{item.date}}</text>
+          </view>
+          <view class='own-record'>
+            <view class='own-record-content'>{{item.message}}</view>
+            <view class='own-record-content-triangle'></view>
+            <image class='own-head-img' src='images/headimg.png'></image>
+          </view>
+        </view>
+        <!-- own结尾  -->
+      </block>
+    </scroll-view>
+  </view>
+</view>
+<view class='hei' id="hei"></view>
+<view class="sendmessage">
+  <input class="chat-input" type="emoji" bindinput="bindChange" confirm-type="done" value='{{input}}' placeholder="" />
+  <button class="btn" type="primary" plain="true" bindtap='send'>发送</button>
+  <input style='display:none' type="" bindinput="bindChange" confirm-type="done" placeholder="" />
+
+</view>

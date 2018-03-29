@@ -1,0 +1,234 @@
+/* pages/index/to_news/to_news.wxss */  
+  
+page {  
+  background-color: white;  
+  
+}  
+  
+.tab {  
+  padding: 20rpx 20rpx 40rpx 50rpx;  
+  height: 20%;  
+  background-color: white;  
+}  
+  
+.tab .tent {  
+  font-size: 33rpx;  
+  margin-bottom: 30rpx;  
+}  
+.jia_img{  
+  height: 80rpx;  
+  width: 90rpx;  
+}  
+.new_imgtent{  
+    height: 180rpx;  
+  width: 190rpx;  
+}  
+.tab .fabu {  
+  font-size: 33rpx;  
+  margin-top: 30rpx;  
+  margin-bottom: 30rpx;  
+}  
+  
+.xiahuaxia {  
+  width: 80%;  
+  text-align: center;  
+  margin: 0 auto;  
+  position: relative;  
+  top: 60rpx;  
+}  
+  
+.chat-time {  
+  text-align: center;  
+  padding: 5rpx 20rpx 5rpx 20rpx;  
+  width: 200rpx;  
+  font-size: 26rpx;  
+  background-color: #e6e6e6;  
+}  
+  
+.new_top_txt {  
+  width: 50%;  
+  position: relative;  
+  top: 38rpx;  
+  text-align: center;  
+  margin: 0 auto;  
+  font-size: 30rpx;  
+  color: #787878;  
+  background-color: #f7f7f7;  
+}  
+  
+/* 聊天内容 */  
+  
+.news {  
+  margin-top: 30rpx;  
+  text-align: center;  
+  margin-bottom: 150rpx;  
+}  
+  
+.img_null {  
+  height: 60rpx;  
+}  
+  
+.l {  
+  height: 5rpx;  
+  width: 20%;  
+  margin-top: 30rpx;  
+  color: #000;  
+}  
+  
+/* 聊天 */  
+  
+.my_right {  
+  float: right;  
+  position: relative;  
+  right: 40rpx;  
+}  
+  
+.you_left {  
+  float: left;  
+  position: relative;  
+  left: 5rpx;  
+}  
+  
+.new_img {  
+  width: 100rpx;  
+  height: 100rpx;  
+  border-radius: 50%;  
+}  
+  
+.sanjiao {  
+  top: 20rpx;  
+  position: relative;  
+  width: 0px;  
+  height: 0px;  
+  border-width: 10px;  
+  border-style: solid;  
+}  
+  
+.my {  
+  border-color: transparent transparent transparent #95d4ff;  
+}  
+  
+.you {  
+  border-color: transparent #95d4ff transparent transparent;  
+}  
+  
+.sendmessage {  
+  background-color: white;  
+  width: 100%;  
+  position: fixed;  
+  bottom: 0rpx;  
+  display: flex;  
+  flex-direction: row;  
+}  
+  
+.sendmessage input {  
+  width: 80%;  
+  height: 80rpx;  
+  background-color: white;  
+  line-height: 80rpx;  
+  font-size: 28rpx;  
+  border: 2rpx solid #d0d0d0;  
+  padding-left: 20rpx;  
+}  
+  
+.sendmessage button {  
+  border: 2rpx solid white;  
+  width: 18%;  
+  height: 80rpx;  
+  background: #fff;  
+  color: #000;  
+  line-height: 80rpx;  
+  font-size: 28rpx;  
+}  
+  
+.historycon {  
+  height: 90%;  
+  width: 100%;  
+  flex-direction: column;  
+  display: flex;  
+  margin-top: 100rpx;  
+  border-top: 0px;  
+}  
+.hei{  
+  margin-top: 50px;  
+  height: 20rpx;  
+}  
+.history {  
+  height: 100%;  
+  margin-top: 30rpx;  
+  margin: 20rpx;  
+  font-size: 28rpx;  
+  line-height: 80rpx;  
+  word-break: break-all;  
+}  
+.btn{
+  margin-left: 5rpx;
+  margin-right:4rpx; 
+}
+.chat-input{
+  margin-left: 5rpx;
+}
+.top-content{
+  display: flex;
+}
+.back-icon{
+  margin-top: 25rpx;
+  margin-left: 25rpx; 
+  width:40rpx;
+  height:40rpx;
+}
+.other-record-content{
+  background-color: #FFEFDB	;
+  width: 380rpx;  
+  border-radius: 7px;   
+  padding: 0rpx 30rpx 0rpx 30rpx;
+ 
+}
+.other-record{
+ 
+    display: flex;
+  justify-content:flex-start;
+}
+.other-head-img{
+  width:70rpx;
+  height:70rpx;
+  margin: 10rpx 10rpx 10rpx 10rpx;
+}
+.other-record-content-triangle{ 
+width: 0; 
+height: 0; 
+border-top: 20rpx solid transparent; 
+border-right: 40rpx solid #FFEFDB; 
+border-bottom: 15rpx solid transparent;
+margin-top: 20rpx;  
+}
+.own-record{
+  display: flex;
+  justify-content:flex-end;
+
+}
+.own-record-content{
+  background-color: #F0F0F0	;
+  width: 380rpx;  
+  border-radius: 7px;   
+  padding: 0rpx 30rpx 0rpx 30rpx;
+}
+.own-record-content-triangle { 
+width: 0; 
+height: 0; 
+border-top: 20rpx solid transparent; 
+border-left: 40rpx solid #F0F0F0; 
+border-bottom: 20rpx solid transparent; 
+margin-top: 20rpx;  
+}
+.own-head-img{
+  width:70rpx;
+  height:70rpx;
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  padding-right:30rpx; 
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
